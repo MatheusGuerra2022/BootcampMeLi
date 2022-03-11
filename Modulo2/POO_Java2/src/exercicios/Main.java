@@ -10,8 +10,7 @@ public class Main {
 
         // Não é possivel realizar essa operação
         // Pessoa usuario = new Pessoa("Pedro", 17);
-
-
+        
         System.out.println(paciente.toString());
         paciente.calculaIMC();
         paciente.ehMaiorIdade();
