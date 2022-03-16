@@ -5,6 +5,7 @@ public class Client {
     int id;
     String nome;
     String sobrenome;
+    boolean cadastradoEmFatura;
 
     public Client(String nome, String sobrenome) {
         idGeral = idGeral + 1;
@@ -25,6 +26,14 @@ public class Client {
         return sobrenome;
     }
 
+    public boolean isCadastradoEmFatura() {
+        return cadastradoEmFatura;
+    }
+
+    public void setCadastradoEmFatura(boolean cadastradoEmFatura) {
+        this.cadastradoEmFatura = cadastradoEmFatura;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +
@@ -38,4 +47,16 @@ public class Client {
         // Instanciar fatura
 
     }
+
+
+    static boolean validaCliente(Client cliente){
+        boolean isCliente = false;
+
+
+
+
+        return isCliente;
+    }
+
+
 }

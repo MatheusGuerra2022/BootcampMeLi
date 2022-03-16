@@ -37,9 +37,16 @@ public class Main {
         listaClientes
                 .stream()
                 .filter(client -> client.getId()==entradaId)
-                .findFirst().ifPresentOrElse(System.out::println, () -> System.out.println("Cadastro inexistente"));
+                .findFirst()
+                .ifPresentOrElse(System.out::println, () -> System.out.println("Cadastro inexistente"));
+
+
+
 
 
 
     }
+
+
+
 }
